@@ -72,7 +72,7 @@ Hardware installation (wiring, power, network): <https://www.logi.casa/esp-home-
 
 Controllers are delivered with the firmware already installed. To install or reinstall it, use the installer page:
 
-**<https://syntos.github.io/esp-controller-test/>**
+**<https://logicasa.github.io/esp-home-controller/>**
 
 1. Choose your variant: **Ethernet** (network cable) or **WiFi**.
 2. Open the casing, connect the mainboard to your computer with a data-capable micro-USB cable, and put the **DIP switch in FLASH mode**.
@@ -182,7 +182,7 @@ The visual editor lets you give inputs, outputs and rules a name, and lets one r
 
 The controller only ever acts on `rules` (every input and output pair of a group becomes one entry there, so the 256 limit counts these entries). `groups` and `labels` are only used by the editor. The controller stores them next to the rules (up to 16 KB) and returns them with **Download current configuration**, so you can edit your setup from any computer.
 
-> **Easiest way:** build the file visually with the [Fallback editor](https://syntos.github.io/esp-controller-test/#editor). Pick inputs and outputs, test the rules in the built-in simulator, and download the file. You can also open an existing file to change it.
+> **Easiest way:** build the file visually with the [Fallback editor](https://logicasa.github.io/esp-home-controller/#editor). Pick inputs and outputs, test the rules in the built-in simulator, and download the file. You can also open an existing file to change it.
 
 ### Example
 

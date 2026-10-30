@@ -6,7 +6,7 @@ substitutions:
 
 packages:
   logicasa:
-    url: https://github.com/syntos/esp-controller-test
+    url: https://github.com/LogiCasa/esp-home-controller
     ref: main                    # production: a release tag, for example v1.0.0
     file: esp-controller-ethernet.yaml   # or esp-controller-wifi.yaml
     refresh: 1d

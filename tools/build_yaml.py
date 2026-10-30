@@ -70,7 +70,7 @@ def generate(variant, cfg, local, out_dir):
 
     subs = ["  project_version: \"%s\"" % version,
             "  factory_api_key: \"%s\"" % cfg["factory_api_key"],
-            "  editor_url: \"https://%s.github.io/%s/\"" % tuple(cfg["repo"].split("/"))]
+            "  editor_url: \"https://%s.github.io/%s/\"" % tuple(cfg["repo"].lower().split("/"))]
     subs += substitution_lines(network) + substitution_lines(common)
 
     if local:

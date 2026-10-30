@@ -7,7 +7,7 @@
 substitutions:
   project_version: "1.1.2"
   factory_api_key: "hLGjhf96voA4hxDAVuzz8/9QTL8kgiMh+las8DLf5L8="
-  editor_url: "https://syntos.github.io/esp-controller-test/"
+  editor_url: "https://logicasa.github.io/esp-home-controller/"
   device_name: logicasa-wifi
   friendly_name: LogiCasa Controller
   prefix: esp
@@ -15,15 +15,15 @@ substitutions:
 # Used by ESPHome Builder when a user clicks "Take Control": it creates a small personal
 # config with its own API key that points to this file.
 dashboard_import:
-  package_import_url: github://syntos/esp-controller-test/esp-controller-wifi.yaml@main
+  package_import_url: github://LogiCasa/esp-home-controller/esp-controller-wifi.yaml@v1.1.2
   import_full_config: false
 
 external_components:
   - source:
       type: git
-      url: https://github.com/syntos/esp-controller-test
-      ref: main
-    refresh: always
+      url: https://github.com/LogiCasa/esp-home-controller
+      ref: v1.1.2
+    refresh: 1d
     components: [fallback_engine]
 
 wifi:
